@@ -6,6 +6,8 @@ const apiGet = async qryStr => {
   return body;
 };
 
-const searchForShows = searchQry => apiGet(`/search/shows?q=${searchQry}`);
+export const searchForShows = searchQry =>
+  apiGet(`/search/shows?q=${searchQry}`);
 
-export default searchForShows;
+export const searchForPeople = searchQry =>
+  apiGet(`/search/people?q=${searchQry}`);
