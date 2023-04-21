@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useShowsState } from '../lib/useShowState';
 
 const SearchForm = ({ onSearch }) => {
   const [searchStr, setSearchStr] = useState('');
   const [searchOption, setSearchOption] = useState('shows');
+  const [showState, dispatchShowState] = useShowsState();
 
   // 1) mounts
   // 2) rerender
@@ -10,6 +12,10 @@ const SearchForm = ({ onSearch }) => {
   // 3) unmount
 
   const onSearchInputChange = ev => {
+    console.log(ev.target.value);
+    showState.includes(ev.target.value);
+    const content = ev.target.value;
+    dispatchShowState({ type: 'content', content });
     setSearchStr(ev.target.value);
   };
 
@@ -30,7 +36,7 @@ const SearchForm = ({ onSearch }) => {
 
   return (
     <form onSubmit={onSubmit}>
-      <input type="text" value={searchStr} onChange={onSearchInputChange} />
+      <input type="text" value={showState} onChange={onSearchInputChange} />
 
       <label>
         Shows
