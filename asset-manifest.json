@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/film-city/static/js/main.6040fe4b.js",
+    "main.js": "/film-city/static/js/main.21536cfe.js",
     "static/js/787.0b68cc29.chunk.js": "/film-city/static/js/787.0b68cc29.chunk.js",
     "service-worker.js": "/film-city/service-worker.js",
     "index.html": "/film-city/index.html",
-    "main.6040fe4b.js.map": "/film-city/static/js/main.6040fe4b.js.map",
+    "main.21536cfe.js.map": "/film-city/static/js/main.21536cfe.js.map",
     "787.0b68cc29.chunk.js.map": "/film-city/static/js/787.0b68cc29.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6040fe4b.js"
+    "static/js/main.21536cfe.js"
   ]
 }
